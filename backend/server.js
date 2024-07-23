@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/uploads", express.static(path.join(__dirname, 'uploads')));
 
-mongoose.connect(process.env.DB_URI)
+mongoose.connect(process.env.mongo_db_test1)
     .then(() => console.log("DB connesso"))
     .catch((err) => console.error("DB: errorre nella connessione", err));
 

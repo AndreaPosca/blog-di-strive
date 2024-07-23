@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const commentSchema = new mongoose.Schema(
+const commentSchema = new Schema(
     {
 
       name: { 
